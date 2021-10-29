@@ -5,6 +5,6 @@ const btn = document.querySelector('button');
 const p = docuemnt.querySelector('p');
 
 btn.addEventListener('click', function(){
-    const suma = parseInt('num1.value') + parseInt('num2.value');
+    const suma = parseInt(num1.value) + parseInt(num2.value);
     p.innerHTML = `Suma wynosi: <b> ${suma} </b>`;
 })
