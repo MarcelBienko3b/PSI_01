@@ -1,9 +1,8 @@
 .upcomingContainer {
-    grid-area: 1/2/1/3;
+    grid-area: 2/2/2/3;
 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;  
     gap: .5em;
 }
 
@@ -33,21 +32,21 @@
 
 .listItem {
     grid-area: 1/1/1/5;
-    padding: 2%;
+    padding: 5% 0 5% 5%;
 }
 
 .listItem::before {
-    content: "· ";
+    content: "📌 ";
     font-weight: 900;
-    margin-left: 1%;
 }
 
 .timeOfEvent {
     grid-area: 1/5/1/7;
+    margin-top: 9%;
 }
 
 .timeOfEvent::before {
-    content: '⌚ ';
+    content: '🕒 ';
 }
 
 .priorityLabel {

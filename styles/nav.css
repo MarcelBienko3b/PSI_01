@@ -1,0 +1,7 @@
+.titleContainer {
+    grid-area: 1/1/1/3;
+    text-align: center;
+
+    font-size: xxx-large;
+    font-weight: 100;
+}

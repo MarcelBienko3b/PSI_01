@@ -1,5 +1,5 @@
 .calendarContainer {
-    grid-area: 1/1/1/2;
+    grid-area: 2/1/2/2;
 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
