@@ -1,0 +1,39 @@
+.calendarContainer {
+    grid-area: 1/1/1/2;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: .5em;
+
+    text-align: center;
+}
+
+.monthName {
+    grid-area: 1/1/1/-1;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: 300;
+}
+
+.dayOfMonthLabel {
+    grid-area: 2/1/-1/-1;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around;
+    height: 30em;
+}
+
+.dayOfMonthLabel > div {
+    padding-top: .6em;
+}
+
+.dayOfMonthLabel > div:not(.dotw):hover {
+    background-color: var(--secBckgClr);
+    color: var(--mainTextClr);
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+}

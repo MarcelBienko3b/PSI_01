@@ -1,0 +1,12 @@
+.currentDate {
+    background-color: #fff;
+    color: #272727;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.nextMonth {
+    color: var(--secTxtClr);
+}

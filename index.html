@@ -2,10 +2,135 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="styles/colors.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/calendar.css">
+    <link rel="stylesheet" href="styles/upcoming.css">
+    <link rel="stylesheet" href="styles/upcomingNextWeek.css">
+    <link rel="stylesheet" href="styles/activeClasses.css">
+    <link rel="stylesheet" href="styles/priorityLabels.css">
+
+    <title>Your localhost</title>
 </head>
 <body>
     
+    <div class="startPageContainer">
+
+        <div class="calendarContainer">
+
+            <div class="monthName">
+                OCTOBER
+            </div>
+
+            <div class="dayOfMonthLabel">
+
+                <div id="day1" class="dotw">Monday</div>
+                <div id="day2" class="dotw">Tuesday</div>
+                <div id="day3" class="dotw">Wednesday</div>
+                <div id="day4" class="dotw">Thursday</div>
+                <div id="day5" class="dotw">Friday</div>
+                <div id="day6" class="dotw">Saturday</div>
+                <div id="day7" class="dotw">Sunday</div>
+
+                <div id="day1_1">1</div>
+                <div id="day1_2">2</div>
+                <div id="day1_3">3</div>
+                <div id="day1_4">4</div>
+                <div id="day1_5">5</div>
+                <div id="day1_6">6</div>
+                <div id="day1_7">7</div>
+
+                <div id="day2_1">8</div>
+                <div id="day2_2">9</div>
+                <div id="day2_3">10</div>
+                <div id="day2_4">11</div>
+                <div id="day2_5">12</div>
+                <div id="day2_6">13</div>
+                <div id="day2_7">14</div>
+
+                <div id="day3_1">15</div>
+                <div id="day3_2">16</div>
+                <div id="day3_3">17</div>
+                <div id="day3_4">18</div>
+                <div id="day3_5">19</div>
+                <div id="day3_6" class="currentDate">20</div>
+                <div id="day3_7">21</div>
+
+                <div id="day4_1">22</div>
+                <div id="day4_2">23</div>
+                <div id="day4_3">24</div>
+                <div id="day4_4">25</div>
+                <div id="day4_5">26</div>
+                <div id="day4_6">27</div>
+                <div id="day4_7">28</div>
+
+                <div id="day5_1">29</div>
+                <div id="day5_2">30</div>
+                <div id="day5_3" class="nextMonth">1</div>
+                <div id="day5_4" class="nextMonth">2</div>
+                <div id="day5_5" class="nextMonth">3</div>
+                <div id="day5_6" class="nextMonth">3</div>
+                <div id="day5_7" class="nextMonth">5</div>
+
+            </div>
+
+        </div>
+
+        <div class="vl"></div>
+
+        <div class="upcomingContainer">
+
+            <div class="upcomingLabel">
+                UPCOMING EVENTS
+            </div>
+
+            <div class="todayContainer">
+                Today - Saturday | 20.11.2021
+
+                <div class="todayEvent">
+
+                    <div class="listItem">Math Homework</div>
+                    <div class="priorityLabel highPriority"></div>
+                    <div class="showDetailsBtn">▼</div>
+
+                </div>
+
+                <div class="todayEvent">
+
+                    <div class="listItem">NextCloud Setup</div>
+                    <div class="priorityLabel lowPriority"></div>
+                    <div class="showDetailsBtn">▼</div>
+
+                </div>
+
+            </div>
+
+            <div class="tommorowContainer">
+                Tommorow - Sunday | 21.11.2021
+
+                <div class="tommorowEvent">
+
+                    <div class="listItem">
+                        F1 Qatar Grand Prix
+                    </div>
+                    <div class="timeOfEvent">15:00</div>
+                    <div class="priorityLabel mediumPriority"></div>
+                    <div class="showDetailsBtn">▼</div>
+
+                </div>
+
+            </div>
+
+            <div class="nextWeekContainer">
+                
+                <div class="nextWeekLabel">NEXT WEEK</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

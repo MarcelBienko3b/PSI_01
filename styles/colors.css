@@ -1,0 +1,17 @@
+:root {
+    --mainBckgClr: #272727;
+    --secBckgClr: #3a3a3a;
+    --tetBckgClr: #1a1919;
+
+    --mainTxtClr: #fff;
+    --secTxtClr: #808080;
+
+    --highPriorityMainClr: #8B0B0B;
+    --highPrioritySecClr: #4D0000;
+    --mediumPriorityMainClr: #FECD1E;
+    --mediumPrioritySecClr: #865000;
+    --lowPriorityMainClr: #288BA8;
+    --lowPrioritySecClr: #004770;
+    --noPriorityMainClr: #67B826;
+    --noPrioritySecClr: #1D4D00;
+}

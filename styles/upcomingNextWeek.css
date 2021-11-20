@@ -1,0 +1,53 @@
+.nextWeekContainer {
+    grid-area: 4/1/4/2;
+}
+
+.nextWeekLabel {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+.todayContainer,
+.tommorowContainer,
+.nextWeekContainer {
+    margin-left: 6%;
+}
+
+.todayEvent,
+.tommorowEvent,
+.nextWeekEvent {
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+    box-shadow: 2px 2px 3px 0 var(--secBckgClr);
+    background-color: var(--tetBckgClr);
+    color: #fff;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+.timeOfEvent::before {
+    content: '⌚ ';
+}
+
+.listItem {
+    grid-area: 1/1/1/3;
+    padding: 2%;
+}
+
+.listItem::before {
+    content: "· ";
+    font-weight: 900;
+    margin-left: 1%;
+}
+
+.priorityLabel {
+    grid-area: 1/5/1/6;
+}
+
+.showDetailsBtn {
+    grid-area: 1/4/1/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
