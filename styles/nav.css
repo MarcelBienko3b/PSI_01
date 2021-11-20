@@ -6,21 +6,18 @@
     font-weight: 100;
 }
 
-.toTopBtn {
-    position: fixed;
-    bottom: 8%;
-    right: 2%;
-    font-size: xxx-large;
-}
-
-.toBottomBtn {
+.navBtns {
     position: fixed;
     bottom: 2%;
     right: 2%;
     font-size: xxx-large;
 }
 
-.toTopBtn > a,
-.toBottomBtn > a {
+.navBtns a {
     text-decoration: none;
+}
+
+.toTopBtn,
+.toBottomBtn {
+    margin-top: 20px;
 }
