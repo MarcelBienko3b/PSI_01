@@ -4,6 +4,11 @@
     display: grid;
     grid-template-columns: 1fr;  
     gap: .5em;
+    max-height: 1fr;
+
+    margin-top: 40%;
+    height: 80%;
+    overflow-y: scroll;
 }
 
 .upcomingLabel {
@@ -40,7 +45,8 @@
     font-weight: 900;
 }
 
-.timeOfEvent {
+.timeOfEvent,
+.dateOfEvent {
     grid-area: 1/5/1/7;
     margin-top: 9%;
 }
