@@ -2,7 +2,7 @@
 
 ## Priorities:
 
-> 'High', 'Medium' and 'Low' priority will be constantly changing while the deadline of event is closing
+> 'High', 'Medium' and 'Low' priority will be constantly changing while the deadline of event is closing.
 > That means i.e. 'Low' priority event can become 'Medium' priority event if deadline is 1 day apart
 >
 > 'No' priority will be static, it will not become 'Low', 'Medium' nor 'High' priority while deadline of event is approaching
