@@ -7,6 +7,12 @@
     gap: .5em;
 
     text-align: center;
+
+    background: #6bddfa33;
+    box-shadow: 0 8px 32px 0 #6bddfa33;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
 }
 
 .monthName {
@@ -30,7 +36,7 @@
 }
 
 .dayOfMonthLabel > div:not(.dotw):hover {
-    background-color: var(--secBckgClr);
+    background-color: #6bddfa30;
     color: var(--mainTextClr);
     width: 80%;
     height: 100%;
