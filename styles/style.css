@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: rgb(200, 200, 200, 0.2);
+}
+
 html {
     scroll-behavior: smooth;
 }
