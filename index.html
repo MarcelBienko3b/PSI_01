@@ -1,498 +1,113 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/calendar.css">
-    <link rel="stylesheet" href="styles/upcomingEvents.css">
-    <link rel="stylesheet" href="styles/upcomingNextWeek.css">
-    <link rel="stylesheet" href="styles/activeClasses.css">
-    <link rel="stylesheet" href="styles/priorityLabels.css">
-    <link rel="stylesheet" href="styles/notepad.css">
-    <link rel="icon" href="images/icons/globeIcon.ico">
+    <head>
 
-    <title>| your :localhost: |</title>
-</head>
-<body>
-    
-    <div class="startPageContainer">
+        <meta charset="UTF-8">
+        <title>your localhost</title>
 
-        <div class="titleContainer" id="topContainer">
-            your :localhost: 🌐
-        </div>
+        <link rel="stylesheet" href="styles/main.css">
 
-        <div class="calendarContainer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-            <div class="monthName">
-                OCTOBER
-            </div>
+        <link rel="icon" href="img/logo_icon--alt.png">
 
-            <div class="dayOfMonthLabel">
+    </head>
 
-                <!-- dotw class is equal to "Day Of The Week"-->
-                <div id="day1" class="dotw">Monday</div>
-                <div id="day2" class="dotw">Tuesday</div>
-                <div id="day3" class="dotw">Wednesday</div>
-                <div id="day4" class="dotw">Thursday</div>
-                <div id="day5" class="dotw">Friday</div>
-                <div id="day6" class="dotw">Saturday</div>
-                <div id="day7" class="dotw">Sunday</div>
+    <body>
 
-                <div id="day1_1">
-                    1
-                    <div class="eventIndicatorContainer">
+            <div class="navbar">
 
-                    </div>
-                </div>
-                <div id="day1_2">
-                    2
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day1_3">
-                    3
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day1_4">
-                    4
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day1_5">
-                    5
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day1_6">
-                    6
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day1_7">
-                    7
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
+                <a href=index.html class="navbar__link">
+                    <img class="navbar__logo" src="img/logo_main--alt.png" alt="website logo">
+                </a>
 
-                <div id="day2_1">
-                    8
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day2_2">
-                    9
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day2_3">
-                    10
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day2_4">
-                    11
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day2_5">
-                    12
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day2_6">
-                    13
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day2_7">
-                    14
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-
-                <div id="day3_1">
-                    15
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day3_2">
-                    16
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day3_3">
-                    17
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day3_4">
-                    18
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day3_5">
-                    19
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day3_6" class="currentDate">
-                    20
-                    <div class="eventIndicatorContainer">
-                        <div class="highPriorityIndicator"></div>
-                        <div class="lowPriorityIndicator"></div>
-                    </div>
-                </div>
-                <div id="day3_7">
-                    21
-                    <div class="eventIndicatorContainer">
-                        <div class="mediumPriorityIndicator"></div>
-                    </div>
-                </div>
-
-                <div id="day4_1">
-                    22
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day4_2">
-                    23
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day4_3">
-                    24
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day4_4">
-                    25
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day4_5">
-                    26
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day4_6">
-                    27
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day4_7">
-                    28
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-
-                <div id="day5_1">
-                    29
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day5_2">
-                    30
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day5_3" class="nextMonth">
-                    1
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day5_4" class="nextMonth">
-                    2
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day5_5" class="nextMonth">
-                    3
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day5_6" class="nextMonth">
-                    4
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
-                <div id="day5_7" class="nextMonth">
-                    5
-                    <div class="eventIndicatorContainer">
-                        
-                    </div>
-                </div>
+                <ul class="navbar__nav nav">
+                    <li><a href="todos.html" class="nav__item">To Do</a></li>
+                </ul>
 
             </div>
-
-        </div>
-
-        <!--<div class="vl"></div>-->
-
-        <div class="upcomingContainer">
-
-            <div class="upcomingLabel">
-                UPCOMING EVENTS
-            </div>
-
-            <div class="todayContainer">
-                Today - Saturday | 20.11.2021
-
-                <div class="todayEvent">
-
-                    <div class="listItem">Math Homework</div>
-                    <div class="priorityLabel highPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="todayEvent">
-
-                    <div class="listItem">NextCloud Setup</div>
-                    <div class="priorityLabel lowPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-            </div>
-
-            <div class="tommorowContainer">
-                Tommorow - Sunday | 21.11.2021
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-            </div>
-
-            <div class="nextWeekContainer">
                 
-                <div class="nextWeekLabel">NEXT WEEK</div>
-
-                <div class="nextWeekEvent">
-
-                    <div class="listItem">
-                        F1 Saui Arabia Grand Prix
-                    </div>
-                    <div class="dateOfEvent">🗓️ 05.12</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-                <div class="tommorowEvent">
-
-                    <div class="listItem">
-                        F1 Qatar Grand Prix
-                    </div>
-                    <div class="timeOfEvent">15:00</div>
-                    <div class="priorityLabel mediumPriority"></div>
-                    <div class="showDetailsBtn">▼</div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="notepadContainer" id="bottomContainer">
             
-            <div class="notepadLabel">
-                TAKE NOTES
-            </div>
+            <hr class="horizontalDivider horizontalDivider--upper">
 
-            <div class="notepad">
+            <div class="container" id="calendar">
 
-                <div class="note" id="note1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A provident, rerum veniam numquam libero voluptatem dignissimos ipsum minima vero, praesentium doloremque impedit quos corrupti perspiciatis facere non amet, suscipit ducimus. Rem architecto ea nobis officia. Reprehenderit esse eos enim provident et modi pariatur omnis, reiciendis explicabo in aliquam sint numquam.</div>
+                <div class="monthDisplay">
 
-                <div class="note" id="note2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <img class="planLekcji" src="images/planLekcji.png"></div>
+                    <div class="monthDisplay__name"></div>
 
-                <div class="note" id="note3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate quaerat ut nihil dolorem accusamus quasi, quod impedit cumque at, voluptatibus possimus saepe obcaecati eveniet hic itaque ipsa dolor enim architecto quidem harum deleniti voluptates nisi! Fugiat possimus libero quisquam illum doloremque soluta, qui, expedita ipsum deserunt repudiandae et officia?</div>
+                    <div>
+                        <button class="monthDisplay__btn monthDisplay__btn--back">Previous</button>
+                        <button class="monthDisplay__btn monthDisplay__btn--next">Next</button>
+                    </div>
 
-                <div class="note" id="note4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo consequuntur asperiores molestias mollitia suscipit blanditiis non minima, ipsam exercitationem alias distinctio pariatur aliquid a. Nobis nisi rem, error corporis beatae, ullam aliquam libero aut perspiciatis ex rerum maxime, nam hic tenetur sapiente quibusdam asperiores recusandae tempora eveniet. Corporis, ipsa.</div>
-
-                <div class="note" id="note5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ea, exercitationem ipsam neque, iure aspernatur tempore vel similique velit iusto deleniti laborum cupiditate unde voluptatum, iste placeat impedit? Repudiandae assumenda, eum iusto ad non ratione minus tempore dicta voluptas expedita, ab at. Vel temporibus eum recusandae, ipsa unde sapiente modi.</div>
-
-                <div class="note" id="note6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi perferendis, obcaecati nostrum accusamus nobis odio libero labore. Illum corrupti consequatur recusandae reprehenderit enim ex dolores veritatis nisi, odio impedit totam eligendi minus, voluptas praesentium! Provident, nostrum distinctio amet et asperiores eum dolor tempore voluptates rem vitae placeat fuga voluptatem?</div>
-
-                <div class="note" id="note7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo natus, amet unde dolore quidem autem aperiam. Earum accusamus iure saepe minus delectus nihil, culpa porro, vitae ipsam recusandae, possimus in voluptatem! 
-                <img class="logo" src="images/logo.svg">
                 </div>
 
-                <div class="note" id="note8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores aspernatur, rerum animi soluta harum, optio explicabo iure temporibus reprehenderit molestias accusantium debitis veritatis, quasi eum perspiciatis corrupti. A odio, facilis nostrum perspiciatis quibusdam veniam, magnam labore saepe expedita nobis, id eveniet laudantium inventore! Nostrum exercitationem quidem aspernatur sed dolorem?</div>
+                <div class="weekdays">
+
+                    <div class="weekdays__elem">Monday</div>
+                    <div class="weekdays__elem">Tuesday</div>
+                    <div class="weekdays__elem">Wednesday</div>
+                    <div class="weekdays__elem">Thursday</div>
+                    <div class="weekdays__elem">Friday</div>
+                    <div class="weekdays__elem">Saturday</div>
+                    <div class="weekdays__elem">Sunday</div>
+
+                </div>
+
+                <div class="calendar">
+
+                </div>
 
             </div>
 
-        </div>
+            <div class="eventSection">
 
-        <div class="navBtns">
+                <div class="eventSection__newEventContainer newEventContainer">
 
-            <div class="addNoteBtn">
-                <a href="#bottomContainer">📝</a>
+                    <h2 class="windowTitle windowTitle--newEvent"></h2>
+
+                    <input type="text" class="newEventContainer__input" placeholder="Event title">
+
+                    <button class="newEventContainer__button newEventContainer__button--save">Save</button>
+                    <button class="newEventContainer__button newEventContainer__button--cancel">Cancel</button>
+
+                </div>
+
+                <div class="eventSection__deleteEventContainer deleteEventContainer">
+
+                    <h2 class="windowTitle windowTitle--deleteEvent">Existing event</h2>
+
+                    <p class="deleteEventContainer__text"></p>
+
+                    <button class="deleteEventContainer__button deleteEventContainer__button--delete">Delete</button>
+                    <button class="deleteEventContainer__button deleteEventContainer__button--cancel">Cancel</button>
+
+                </div>
+
             </div>
 
-            <div class="toTopBtn">
-                <a href="#topContainer">🗓️</a>
-            </div>
+            <footer class="footer" id="footer">
 
-            <div class="toBottomBtn">
-                <a href="#bottomContainer">🗒️</a>
-            </div>
+                <div class="footer__logo">
+                    <img src="img/logo_main--alt.png" alt="website logo" class="footer__img">
+                </div>
 
-        </div>
-            
-    </div>
+                <div class="footer__copyright">
+                    &copy; Marcel Bieńko 2022
+                </div>
 
-</body>
+                <div class="footer__socials socials">
+                    <a class="socials__link" href="http://github.com/marcelbienko3b"><li>github.com/MarcelBienko3b</li></a>
+                </div>
+
+            </footer>
+
+            <script src="scripts/calendar.js"></script>
+
+    </body>
+
 </html>

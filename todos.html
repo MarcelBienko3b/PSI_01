@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>your localhost</title>
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="img/logo_icon--alt.png">
+    </head>
+
+    <body>
+
+        <div class="navbar">
+
+            <a href=index.html class="navbar__link">
+                <img class="navbar__logo" src="img/logo_main--alt.png" alt="website logo">
+            </a>
+
+            <ul class="navbar__nav nav">
+                <li><a href="index.html" class="nav__item">Calendar</a></li>
+            </ul>
+
+        </div>
+
+        <hr class="horizontalDivider horizontalDivider--upper">
+
+        <div class="todoContainer">
+
+            <div class="modal" id="todo_form">
+
+                <div class="modal__header">
+
+                    <div class="modal__title">New ToDo</div>
+                    <button class="modal__close">&times;</button>
+
+                </div>
+
+                <div class="modal__body">
+                    <input type="text" class="modal__input">
+                    <input type="submit" value="Add Todo" class="modal__submit">
+                </div>
+
+            </div>
+
+            <div class="todoContainer__status todoContainer__status--noStatus status">
+                <h2 class="status__title">no status</h1>
+                <button class="status__btn" data-target="#todo_form">+ Add Todo</button>
+            </div>
+
+            <div class="todoContainer__status todoContainer__status--notStarted status">
+                <h2 class="status__title">planned</h1>
+            </div>
+
+            <div class="todoContainer__status todoContainer__status--inProgress status">
+                <h2 class="status__title">in progress</h1>
+            </div>
+
+            <div class="todoContainer__status todoContainer__status--completed status">
+                <h2 class="status__title">completed</h1>
+            </div>
+
+        </div>
+
+        <footer class="footer" id="footer">
+
+            <div class="footer__logo">
+                <img src="img/logo_main--alt.png" alt="website logo" class="footer__img">
+            </div>
+
+            <div class="footer__copyright">
+                &copy; Marcel Bieńko 2022
+            </div>
+
+            <div class="footer__socials socials">
+                <a class="socials__link" href="http://github.com/marcelbienko3b"><li>github.com/MarcelBienko3b</li></a>
+            </div>
+
+        </footer>
+
+        <script src="scripts/todos.js"></script>
+
+    </body>
+</html>
